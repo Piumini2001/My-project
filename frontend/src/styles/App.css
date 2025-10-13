@@ -1,0 +1,74 @@
+/* src/styles/App.css */
+.App {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Home Page Styles */
+.hero-section {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+
+.feature-icon {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .feature-icon {
+  transform: scale(1.1);
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+
+/* General Styles */
+.card {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #dee2e6;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.card.border-success {
+  border-color: #198754 !important;
+}
+
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.form-control, .form-select {
+  border-radius: 6px;
+}
+
+.badge {
+  font-size: 0.7em;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .hero-section .display-4 {
+    font-size: 2rem;
+  }
+  
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
